@@ -92,7 +92,7 @@ eWrapper <- function(debug=FALSE, errfile=stderr()) {
     contractDetailsEnd  <- function(curMsg, msg, timestamp, file,  ...) { c(curMsg, msg) }
     execDetails  <- function(curMsg, msg, timestamp, file,  ...) { 
       e_execDetails(curMsg, msg, file, ...)
-      #c(curMsg, msg) 
+      c(curMsg, msg) 
     }
     execDetailsEnd  <- function(curMsg, msg, timestamp, file,  ...) { c(curMsg, msg) }
     updateMktDepth  <- function(curMsg, msg, timestamp, file,  ...) 

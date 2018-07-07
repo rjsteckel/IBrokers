@@ -32,6 +32,7 @@ export(twsConnect,
 
        twsExecutionFilter,
        reqExecutions,
+       reqExecOrders,
 
        reqScannerParameters,
        twsScannerSubscription,
@@ -86,6 +87,7 @@ export(twsConnect,
       .reqAllOpenOrders,
       .reqAutoOpenOrders,
        exerciseOptions,
+       reqOpenOrderContracts,
 
        reqNewsBulletins,
        cancelNewsBulletins,

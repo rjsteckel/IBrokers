@@ -18,3 +18,13 @@ function(con, verbose, OK=NULL) {
     return(FALSE)
   }
 }
+
+`drainSocket` <- function(con, verbose=FALSE) {
+  msg <- '0'
+  while(length(msg) > 0) {
+    msg <- readBin(con, character(), 1L)  
+    if(verbose) {
+      print(msg)  
+    }
+  }
+}
